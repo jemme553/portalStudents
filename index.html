@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='fullcalendar-5.11.3/lib/main.css' rel='stylesheet' />
+    <script src='fullcalendar-5.11.3/lib/main.js' defer></script>
+    <script src="./main.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <main class='d-flex'>
+        <div class='bg-dark w-20 text-light p-3' style="height:100vh;">
+            <ul class="nav flex-column nav-pills nav-fill">
+                <li class="nav-item text-left">
+                    <a style="cursor: pointer;" class="nav-link active border-start border-4 border-light text-decoration-none text-light mt-2 text-left" id="loginBtn" onclick="showLogin()">Login</a>
+                </li>
+                <li class="nav-item text-left">
+                    <a style="cursor: pointer;" class="nav-link border-start border-4 border-light text-decoration-none text-light mt-2 text-left" id="profileBtn" onclick="showProfile()">Profile</a>
+                </li>
+                <li class="nav-item text-left">
+                    <a style="cursor: pointer;" class="nav-link border-start border-4 border-light text-decoration-none text-light mt-2 text-left" id="coursesBtn" onclick="showCourses()">Courses</a>
+                </li>
+                <li class="nav-item text-left">
+                    <a style="cursor: pointer;" class="nav-link border-start border-4 border-light text-decoration-none text-light mt-2 text-left" id="calendarBtn" onclick="showCalendar()">Calendar</a>
+                </li>
+                <li class="nav-item text-left">
+                    <a style="cursor: pointer;" class="nav-link border-start border-4 border-light text-decoration-none text-light mt-2 text-left" id="logoutBtn" onclick="logout()">Logout</a>
+                </li>
+            </ul>
+        
+        </div>
+        <div id="secDiv" class='d-flex justify-content-center' style="width:100%;"></div>
+    </main>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.6.15/dist/sweetalert2.all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>
